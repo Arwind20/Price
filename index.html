@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing z</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .plan {
+            flex: 1 1 300px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .plan:hover {
+            transform: scale(1.05);
+        }
+
+        .plan h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .plan .price {
+            font-size: 36px;
+            font-weight: bold;
+            color: #1fbdb8;
+        }
+
+        .plan ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .plan li {
+            padding: 10px 0;
+            color: #666;
+        }
+
+        .plan li i {
+            margin-right: 5px;
+        }
+
+        .plan button {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 15px;
+        }
+
+        .plan button:hover {
+            background-color: #218838;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="plan">
+            <h2>Basic Plan</h2>
+            <div class="price">₱159.00/month</div>
+            <ul>
+                <li><i class="fas fa-check"></i> 10GB Storage</li>
+                <li><i class="fas fa-check"></i> ✔ 1 User</li>
+                <li><i class="fas fa-times"></i> 🚫 Support</li>
+            </ul>
+            <button>Sign Up</button>
+        </div>
+        <div class="plan">
+            <h2>Standard Plan</h2>
+            <div class="price">₱599.00/month</div>
+            <ul>
+                <li><i class="fas fa-check"></i> 50GB Storage</li>
+                <li><i class="fas fa-check"></i> ✔ 5 Users</li>
+                <li><i class="fas fa-check"></i> ✔ Phone & Email Support</li>
+            </ul>
+            <button>Sign Up</button>
+        </div>
+        <div class="plan">
+            <h2>Premium Plan</h2>
+            <div class="price">₱999.00/month</div>
+            <ul>
+                <li><i class="fas fa-check"></i> 100GB Storage</li>
+                <li><i class="fas fa-check"></i> ✔ 10 Users</li>
+                <li><i class="fas fa-check"></i> ✔ 24/7 Support</li>
+            </ul>
+            <button>Sign Up</button>
+        </div>
+    </div>
+</body>
+</html>
